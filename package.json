@@ -22,7 +22,7 @@
     "test:mail": "tsx src/scripts/test-sg.ts",
     "// build/start (prod)": "------------------------------------------------",
     "typecheck": "tsc -p tsconfig.json --noEmit",
-    "build": "tsc -p tsconfig.json",
+    "build": "prisma generate && tsc -p tsconfig.json",
     "start": "node dist/src/index.js",
     "lint": "echo \"add eslint if you want\"",
     "// optional: ensure prisma client on install": "---------------------------",
